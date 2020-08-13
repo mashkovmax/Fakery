@@ -8,7 +8,11 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        .library(name: "Fakery", targets: ["Fakery"])
+        .library(
+            name: "Fakery",
+            type: .dynamic,
+            targets: ["Fakery"]
+        )
     ],
     dependencies: [
     // Test dependencies
